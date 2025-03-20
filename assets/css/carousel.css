@@ -1,0 +1,79 @@
+/* Testimonios Carousel Styles */
+.testimonios-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.testimonios-carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.testimonio-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.carousel-control {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.carousel-control:hover {
+    background-color: #5a1786;
+    transform: scale(1.1);
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 8px;
+}
+
+.carousel-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.carousel-indicator.active {
+    background-color: var(--color-primary);
+    transform: scale(1.2);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .carousel-control {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .carousel-indicator {
+        width: 10px;
+        height: 10px;
+    }
+}

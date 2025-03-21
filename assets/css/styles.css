@@ -113,6 +113,10 @@ nav ul li a {
     font-weight: 500;
     position: relative;
     padding: 0.5rem 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 nav ul li a:hover {
@@ -889,7 +893,7 @@ footer {
 
 /* Responsive */
 /* Estilos para tablets y dispositivos móviles */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1250px) {
     header {
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }

@@ -48,14 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const experiencia = document.getElementById('experiencia').value;
             const educacion = document.getElementById('educacion').value;
             const mensajeAdicional = document.getElementById('mensaje-adicional').value;
-            const curriculumInput = document.getElementById('curriculum');
-            
-            // Verificar si se ha seleccionado un archivo
-            let curriculumNombre = "No se adjuntó CV";
-            if (curriculumInput.files.length > 0) {
-                curriculumNombre = curriculumInput.files[0].name;
-            }
-            
+                        
             // Número de WhatsApp fijo
             const numeroWhatsApp = "50370398156";
             
@@ -69,13 +62,12 @@ document.addEventListener('DOMContentLoaded', function() {
             mensajeWhatsApp += `*Experiencia Laboral:*\n${experiencia}\n\n`;
             mensajeWhatsApp += `*Educación:*\n${educacion}\n\n`;
             mensajeWhatsApp += `*Información Adicional:*\n${mensajeAdicional}\n\n`;
-            mensajeWhatsApp += `*Curriculum:* ${curriculumNombre}`;
             
             // Crear el enlace de WhatsApp
             const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensajeWhatsApp)}`;
             
             // Mostrar mensaje de confirmación
-            alert('¡Gracias por tu solicitud! Serás redirigido a WhatsApp para completar el envío. Por favor, envía también tu curriculum por este medio.');
+            alert('¡Gracias por tu solicitud! Serás redirigido a WhatsApp para completar el envío. Por favor, no olvides enviar tu hoja de vida con foto.');
             
             // Abrir WhatsApp en una nueva ventana
             window.open(urlWhatsApp, '_blank');
